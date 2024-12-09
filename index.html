@@ -3,16 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>MockMarket</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="stylesheet" href="./styles/assets.css" />
     <link rel="stylesheet" href="./styles/basics.css" />
+    <link rel="shortcut icon" href="./imgs/favicon.png" type="image/x-icon" />
   </head>
   <body>
-    <header></header>
-    <div class="Wallpaper"></div>
-    <footer></footer>
+    <header>
+      <div class="header-left flex">
+        <img src="./imgs/logo-small.png" height="40px" />
+        <div class="search-bar">
+          <input
+            type="text"
+            autocomplete="off"
+            name="text"
+            class="input"
+            placeholder="Search crypto, stocks, etf's"
+          />
+        </div>
+      </div>
+      <div class="header-links flex">
+        <div class="underline">
+          <a href="">Home</a>
+        </div>
+        <a href="">Portfolio</a>
+        <a href="">Pay In</a>
+      </div>
+    </header>
+
+    <div class="content">
+      <div class="left-lane">
+        <div class="card">
+          <div class="overview-header">
+            <p>Hello, Name!</p>
+            <h1 class="top-20">Your portfolio value is €586.26</h1>
+            <p class="top-10">2.93% in one day</p>
+          </div>
+          <div class="overview-chart"></div>
+          <div class="overview-list"></div>
+        </div>
+      </div>
+      <div class="right-lane"></div>
+    </div>
+
+    <footer>
+      <img src="./imgs/logo-long.png" height="60px" />
+    </footer>
   </body>
   <script src="./script.js"></script>
   <script src="./js/animations.js"></script>

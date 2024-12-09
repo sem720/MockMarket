@@ -1,19 +1,93 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html,body {
-    margin: 0;
-    padding: 0;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    min-height: 100vh;    
+  min-height: 100vh;
+  background: rgb(247, 247, 247);
 }
 
 @font-face {
-    font-family: name;
-    src: url();
+  font-family: SF-Italic;
+  src: url(/fonts/SFPRODISPLAYTHINITALIC.OTF);
+}
+
+@font-face {
+  font-family: SF-Regular;
+  src: url(/fonts/SFPRODISPLAYREGULAR.OTF);
+}
+
+@font-face {
+  font-family: SF-Medium;
+  src: url(/fonts/SFPRODISPLAYMEDIUM.OTF);
+}
+
+@font-face {
+  font-family: SF-Bold;
+  src: url(/fonts/SFPRODISPLAYBOLD.OTF);
+}
+
+a {
+  font-family: SF-Medium;
+  text-decoration: none;
+  font-size: 18px;
+  color: #161618;
+}
+
+.flex {
+  display: flex;
+}
+
+.underline {
+  border-bottom: 2px solid #f5c42c;
+  padding-bottom: 5px;
+}
+
+h1 {
+  font-size: 36px;
+  font-family: SF-Bold;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: SF-Bold;
+}
+
+h3 {
+  font-size: 28px;
+  font-family: SF-Bold;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 22px;
+}
+
+p {
+  font-size: 18px;
+  font-family: SF-Regular;
+  color: rgb(65, 65, 65);
+}
+
+.top-10 {
+  margin-top: 10px;
+}
+
+.top-20 {
+  margin-top: 20px;
+}
+
+.top-50 {
+  margin-top: 50px;
 }
