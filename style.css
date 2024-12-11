@@ -17,6 +17,67 @@ header {
   padding-bottom: 5px;
 }
 
+.wallet {
+  transition: all 0.2s ease;
+  position: relative;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.popup-wallet {
+  position: absolute;
+  top: 40px; /* Place it below the wallet container */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  padding: 10px;
+  background-color: #ffffff;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 14px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 900;
+}
+
+.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.wallet-choices {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.choice {
+  height: 50px;
+  width: 100px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(218, 218, 218);
+  margin: 10px;
+}
+
+.choice:hover {
+  background: rgb(240, 240, 240);
+}
+
+.input-div {
+  display: flex;
+  position: relative;
+}
+
 .content {
   display: flex;
   padding: 0 20%;
@@ -26,13 +87,13 @@ header {
 .left-lane {
   width: 60%;
   height: 100vh;
-  padding: 5%;
+  padding: 3%;
 }
 
 .right-lane {
   width: 40%;
   height: 100vh;
-  padding: 5%;
+  padding: 3%;
 }
 
 footer {
