@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="./styles/basics.css" />
     <link rel="shortcut icon" href="./imgs/favicon.png" type="image/x-icon" />
   </head>
-  <body>
+  <body onload="init()">
     <header>
       <div class="header-left flex">
-        <img src="./imgs/logo-small.png" height="40px" />
+        <a href="index.html"><img src="./imgs/logo-small.png" height="40px" /></a>
         <div class="search-bar">
           <input
             type="text"
@@ -25,8 +25,8 @@
         </div>
       </div>
       <div class="header-links flex">
-        <div class="wallet" onclick="toggleWallet()">
-          <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="23 29 78 60" height="25px" width="35px" style="margin-right: 1px;">
+        <div class="wallet">
+          <svg onclick="toggleWallet()" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="23 29 78 60" height="25px" width="35px" style="margin-right: 1px;">
   
             <defs></defs>
             <g transform="translate(23.000000, 29.500000)" fill-rule="evenodd" fill="none" stroke-width="1" stroke="none" id="icon">
@@ -44,7 +44,7 @@
           <div class="popup-wallet" id="popup-wallet">
             <div class="wallet-information">
               <p>add money</p>
-              <h5 class="top-20">cash: €190</h5>
+              <h5 class="top-20" id="displayCash"></h5>
             </div>
             <div class="wallet-choices top-20">
               <div class="choice"><h5>100 €</h5></div>
@@ -56,6 +56,7 @@
               type="text"
               name="text"
               class="input-wallet top-20"
+              id="cashInput"
               placeholder="0.00"
             />
             <div class="arrow">›</div>
@@ -63,9 +64,9 @@
           </div>
         </div>
         <div class="underline">
-          <a href="">Home</a>
+          <a href="">Portfolio</a>
         </div>
-        <a href="">Portfolio</a>
+        <a href="">Discover</a>
       </div>
     </header>
 
@@ -74,8 +75,8 @@
         <div class="card">
           <div class="overview-header">
             <p>Hello, Name!</p>
-            <h1 class="top-20">Your portfolio value is €586.26</h1>
-            <p class="top-10">2.93% in one day</p>
+            <h1 class="top-20" id="overviewCash">Your portfolio value is €586.26</h1>
+            <p class="top-10">2.93% today</p>
           </div>
           <div class="overview-chart"></div>
           <div class="overview-list">
@@ -158,7 +159,7 @@
     </div>
 
     <footer>
-      <img src="./imgs/logo-long.png" height="60px" />
+      <img src="./imgs/logo-small.png" height="60px" />
     </footer>
   </body>
   <script src="./script.js"></script>

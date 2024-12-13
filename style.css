@@ -81,7 +81,7 @@ header {
 .content {
   display: flex;
   padding: 0 20%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .left-lane {

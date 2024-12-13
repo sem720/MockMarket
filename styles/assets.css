@@ -163,3 +163,70 @@
     opacity: 1;
   }
 }
+
+/*---------------------------------------------------------
+Discover HTML
+-----------------------------------------------------------*/
+
+/* Searchbar */
+.group {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.input-discover {
+  width: 80%;
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #e9e9e9;
+  color: #0d0c22;
+  transition: 0.3s ease;
+}
+
+.input-disvover::placeholder {
+  color: #9e9ea7;
+}
+
+.input-discover:focus,
+input:hover {
+  outline: none;
+  border-color: rgba(171, 76, 234, 0.4);
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+}
+
+.icon {
+  position: relative;
+  fill: #9e9ea7;
+  width: 1rem;
+  height: 1rem;
+  margin-right: -30px;
+}
+
+/* Button Buy */
+.buy-button {
+  color: #ecf0f1;
+  font-size: 14px;
+  background-color: #1c1c1f;
+  border: 1px solid #1f1f22;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 8px 25px;
+  box-shadow: 0px 6px 0px #424242;
+  transition: all 0.1s;
+}
+
+.buy-button:active {
+  box-shadow: 0px 2px 0px #424242;
+  position: relative;
+  top: 2px;
+}
